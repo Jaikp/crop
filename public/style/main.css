@@ -1,0 +1,329 @@
+
+.top-content{
+    width: 100%;
+    height: 100%;
+    /* background-color: #A8DF8E; */
+    
+}
+
+video
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: -1;;
+  filter: grayscale(0%);
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.top-content{
+    margin-top: 100px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.top-p{
+    font-size: 2rem !important;
+    font-family: 'Kenia', cursive;
+    word-wrap: break-word;
+    text-align: center;
+}
+.top-h1{
+    font-size: 5rem !important;
+    word-wrap: break-word;
+    text-align: center;
+
+}
+.base1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.fruit-base1{
+    
+    display: flex;
+    flex-flow: row wrap;
+}
+.fruit-type{
+    background-color: red;
+    width: 400px;
+    height:400px;
+    margin: 6px;
+    
+}
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7vh;
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+.two-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+.two-head h1{
+    font-size: 5rem;
+    color: antiquewhite;
+}
+
+.card1{
+    width: 25vw;
+    height: 60vh;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    
+}
+.card1:hover{
+    transition-duration: 1s;
+    transform: scale(1.05);
+    background-image: url("../images/—Pngtree—wheat\ field\ mango\ species\ orange_941163.jpg");
+    background-size: cover;
+    opacity: 75%;
+    
+}
+.card1 a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: black;
+    word-wrap: break-word;
+}
+
+.name-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7vh;
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #B5D5C5;
+}
+.name-two-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+.name-two-head h1{
+    font-size: 5rem;
+    color: antiquewhite;
+    margin-top: 2rem;
+}
+
+.name-card1{
+    width: 25vw;
+    height: 30vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 19px 38px 0px rgba(0,0,0,0.3);
+    background-color: aliceblue;
+    
+}
+.name-card1 img{
+    margin-top: 0;
+    border-radius: 25px 25px 0px 0px;
+}
+.name-card1 a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: black;
+    word-wrap: break-word;
+}
+
+
+.disease-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 100%;
+    
+    padding-bottom: 50px;
+    background-color: #B5D5C5;
+}
+.disease-two-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 2vw;
+}
+.disease-two-head h1{
+    margin-top: 1.5rem;
+    font-size: 5rem;
+    color: antiquewhite;
+}
+
+.disease-back{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.disease-main{
+    position: relative;
+    height: 350px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+  }
+  .disease-image{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #85586F;
+    width: 300px;
+    height: 240px;
+    z-index: 1;
+    border-radius: 25px;
+    box-shadow: 0px 19px 38px 0px rgba(0,0,0,0.3);
+    transition-duration: 0.5s;
+  }
+  .disease-image img{
+    border-radius: 25px;
+  }
+  .disease-content{
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 213px;
+    height: 100px;
+    top: 11.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 19px 38px 0px rgba(0,0,0,0.3);
+    transition-duration: 0.5s;
+  }
+  .disease-image:hover + .disease-content {
+    top: 15rem;
+    transform: scale(0.95);
+}
+.disease-image:hover{
+    transform: scale(1.15);
+}
+
+  .disease-content a{
+    text-decoration: none;
+    color: black;
+}
+
+  /* Solution */
+
+.solution-two{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.solution-two-head{
+    font-size: 4rem;
+    margin-bottom: 10rem;
+    background-color: #435334;
+    padding: 2rem;
+    color: #fff;
+    border-radius: 10px;
+}
+.solution-content{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+.solution-two-card{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    font-size: 2rem;
+
+    box-shadow: 0px 19px 38px 0px rgba(0,0,0,0.3);
+    
+    padding: 2rem;
+    color: black;
+    border-radius: 10px;
+    width: 75%;
+    height: max-content;
+}
+
+.solution-content h1{
+    margin-top: 5px !important;
+}
+
+/* wheather */
+.three{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    padding: 10px;
+}
+.weather{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.lside{
+
+    grid-column: span 1;
+    grid-row: span 3;
+}
+.rside{
+    grid-column: span 1;
+    grid-row: span 3;
+}
+.Weather-card1{
+    background-color: #9e1d1d00;
+    border-radius: 10px;
+}
+
+/* footer */
+
+footer{
+    background-color: lightgreen;
+    
+}

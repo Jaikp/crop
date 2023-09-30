@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+
+<div class="disease-two">
+    <div class="disease-two-head">
+        <h1><%= post.name %></h1>
+    </div>
+    <div class="disease-two-card"></div>
+
+    <div class="disease-back">
+        <% let i=0;%>
+        <% post.diseases.forEach((disease) => { %>
+    <div class="disease-main">
+       
+            <div class="disease-image"> 
+                <img src="/images/name/<%= post.type %>/<%= disease.name %>.jpg" alt="" height="100%" width="100%"> 
+              
+            </div>
+            <div class="disease-content">
+                <a class=" " href="/<%= post.type %>/<%= post.name %>/<%= post.diseases[i].name %>" role="button"><%= disease.name %></a>
+              </div>
+       
+        
+        
+      </div>
+      <% i++;%>
+    <%});%>
+    </div>
+
+</div>
+
+
+<%- include('partials/footer.ejs') %>

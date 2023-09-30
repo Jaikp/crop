@@ -1,0 +1,20 @@
+<%- include('partials/header.ejs') %>
+
+<div class="name-two">
+    <div class="name-two-head">
+        <% if (post.length > 0) { %>
+            <h1><%= post[0].type %></h1>
+        <% } %>
+
+    </div>
+    <div class="name-two-card">
+        <% post.forEach((crop) => { %>
+            <div class="name-card1">
+                <img src="/images/name/<%= crop.name %>.jpg" alt="" height="80%" width="100%">
+                <a class=" " href="/<%= crop.type %>/<%= crop.name %>" role="button"><%= crop.name %></a>
+            </div>
+        <%});%>
+    </div>
+    
+</div>
+<%- include('partials/footer.ejs') %>
