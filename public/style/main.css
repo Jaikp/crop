@@ -1,7 +1,7 @@
 
 .top-content{
-    width: 100vw;
-    height: 90vh;
+    width: 100%;
+    height: 98vh;
     /* background-color: #A8DF8E; */
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ video
     animation-fill-mode: forwards;
 }
 .top-p{
-    font-size: 3rem !important;
+    font-size: 3.2vw !important;
     font-family: 'Source Code Pro', monospace;
     word-wrap: break-word;
     text-align: center;
@@ -52,32 +52,11 @@ video
     justify-content: center;
 }
 .top-h1{
-    font-size: 8rem !important;
+    font-size: 5vw !important;
     word-wrap: break-word;
     text-align: center;
     margin-bottom: 2rem;
     font-family: 'Martian Mono', monospace;
-    
-}
-.base1{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 1000px;
-}
-
-.fruit-base1{
-    
-    display: flex;
-    flex-flow: row wrap;
-}
-.fruit-type{
-    background-color: red;
-    width: 400px;
-    height:400px;
-    margin: 6px;
     
 }
 .two{
@@ -89,6 +68,7 @@ video
     width: 100%;
     height: 100%;
     margin-bottom: 2rem;
+    padding: 1.5vw;
 }
 .two-card{
     display: flex;
@@ -98,33 +78,42 @@ video
     gap: 5vw;
 }
 .two-head h1{
-    font-size: 5rem;
+    font-size: 7vw;
     color: antiquewhite;
+    text-align: center;
+    text-wrap: wrap;
 }
 
 .card1{
     width: 400px;
-    height: 400px;
+    height: 500px;
     border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aliceblue;
-    
+    background-color: aliceblue; 
+}
+.card1 img{
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    opacity: 60%;
 }
 .card1:hover{
     transition-duration: 1s;
     transform: scale(1.05);
-    background-image: url("../images/—Pngtree—wheat\ field\ mango\ species\ orange_941163.jpg");
     background-size: cover;
-    opacity: 75%;
+    color: whitesmoke;
     
 }
 .card1 a{
+    position:absolute;
     text-decoration: none;
     font-size: 3rem;
     color: black;
     word-wrap: break-word;
+    z-index: 1;
 }
 
 .name-two{
@@ -134,7 +123,7 @@ video
     flex-direction: column;
     gap: 7vh;
     width: 100%;
-    padding-bottom: 50px;
+    padding: 10vw;
     background-color: #B5D5C5;
 }
 .name-two-card{
@@ -145,7 +134,7 @@ video
     gap: 5vw;
 }
 .name-two-head h1{
-    font-size: 5rem;
+    font-size: 6vw;
     color: antiquewhite;
     margin-top: 2rem;
 }
@@ -167,7 +156,7 @@ video
 }
 .name-card1 a{
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 3vw;
     color: black;
     word-wrap: break-word;
 }
@@ -261,15 +250,14 @@ video
   /* Solution */
 
 .solution-two{
-    margin-top: 5rem;
+    margin-top: 3vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
 .solution-two-head{
-    font-size: 4rem;
-    margin-bottom: 10rem;
+    font-size: 4vw;
     align-items: center;
     padding: 2rem;
     color: #fff;
@@ -285,20 +273,20 @@ video
     border-radius: 10px;
 }
 .solution-content{
-    margin-top: 2rem;
+   
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 3vw;
     justify-content: center;
     align-items: center;
+    gap: 4vh;
     margin-bottom: 3rem;
 }
 .solution-two-card{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    font-size: 2rem;
+    gap: 5px;
+    font-size: 2vw;
 
     box-shadow: 0px 19px 38px 0px rgba(0,0,0,0.3);
     
@@ -311,6 +299,7 @@ video
 
 .solution-content h1{
     margin-top: 5px !important;
+    font-size: 4vw !important;
 }
 
 /* wheather */
@@ -349,3 +338,113 @@ footer{
     background-color: lightgreen;
     
 }
+
+
+@media only screen and (max-width: 600px) {
+    .top-p{
+        font-size: 6vw !important;
+        width: 80%; 
+    }
+    .top-h1{
+        font-size: 11vw !important;
+    }
+
+    .card1{
+        width: 90vw;
+        height: 90vw;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue; 
+    }
+    .two-head h1{
+        font-size: 9vw;
+        color: antiquewhite;
+        text-align: center;
+        text-wrap: wrap;
+    }
+
+    .card1 a{
+        text-decoration: none;
+        font-size: 10vw;
+        color: black;
+        word-wrap: break-word;
+    }
+
+    .name-card1{
+        width: 90vw;
+        height: 80vw;
+        
+    }
+    .name-card1 a{
+        text-decoration: none;
+        font-size: 10vw;
+        color: black;
+        word-wrap: break-word;
+    }
+    .name-two-head h1{
+        font-size: 12vw;
+        color: antiquewhite;
+        margin-top: 2rem;
+    }
+    .disease-back{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20vw;
+        flex-wrap: wrap;
+    }
+    .disease-main{
+        position: relative;
+        height: 70vw;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+      }
+      .disease-image{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #85586F;
+        width: 80vw;
+        height: 70vw;
+        z-index: 1;
+        border-radius: 25px;
+        box-shadow: 0px 19px 38px 0px rgba(0,0,0,0.3);
+        transition-duration: 0.5s;
+      }
+      .disease-image img{
+        border-radius: 25px;
+      }
+      .disease-content{
+        position: absolute;
+        background-color: #fff;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        width: 50vw;
+        height: 20vw;
+        top: 60vw;
+        border-radius: 15px;
+        box-shadow: 0px 19px 38px 0px rgba(0,0,0,0.3);
+        transition-duration: 0.5s;
+      }
+      .disease-image:hover + .disease-content {
+        top: 70vw;
+        transform: scale(0.95);
+    }
+    .disease-image:hover{
+        transform: scale(1.15);
+    }
+    
+      .disease-content a{
+        text-decoration: none;
+        color: black;
+    }
+  }
