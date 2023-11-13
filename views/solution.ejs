@@ -4,32 +4,40 @@
     </div>
 <div class="solution-two">
     
-    <div class="solution-content">
-        <div class="solution-two-card">
-            <img src="/images/name/<%=post.name%>.jpg" alt="">
-        </div>
-        <div class="solution-two-card">
-            <h1>Symptoms</h1>
-            <p><%= post.symptoms %></p>
-         </div>
-        <div class="solution-two-card">
-            <h1>Prevention</h1>
-            <% for (var i = 0; i < post.prevention.length; i++) { %>
-                <p><%= post.prevention[i] %></p>
-            <% } %>
+    
+        <div class="solution-img">
+            <div class="solution-two-card solution-two-card-sticky">
+                <img src="/images/name/<%=post.name%>.jpg" width="400" height="400" alt="">
+            </div>
+            <div class="solution-content">
+
             
+            <div class="solution-two-card">
+                <h1>Symptoms</h1>
+                <p><%= post.symptoms %></p>
+            </div>
+            <div class="solution-two-card">
+                <h1>Prevention</h1>
+                <% for (var i = 0; i < post.prevention.length; i++) { %>
+                    <p><%= post.prevention[i] %></p>
+                <% } %>
+                
+            </div>
+            <div class="solution-two-card">
+                <h1>Management</h1>
+                <% for (var i = 0; i < post.management.length; i++) { %>
+                    <p><%= post.management[i] %></p>
+                <% } %>
+            </div>
+            <div class="solution-two-card">
+                <h1>Pesticides</h1>
+                <p><%= post.pesticides %></p>
+            </div>
         </div>
-        <div class="solution-two-card">
-            <h1>Management</h1>
-            <% for (var i = 0; i < post.management.length; i++) { %>
-                <p><%= post.management[i] %></p>
-            <% } %>
         </div>
-        <div class="solution-two-card">
-            <h1>Pesticides</h1>
-            <p><%= post.pesticides %></p>
-        </div>
-    </div>
+        
+        
+    
     
 </div>
 

@@ -2,20 +2,51 @@ import express from "express"
 import bodyParser from "body-parser"
 import axios from "axios"
 const API_URL = "https://crop-api-5ilz.onrender.com";
+//https://crop-api-5ilz.onrender.com
 
 
 const port=3000;
 const app=express();
-
+ 
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 
-app.get("/",(req,res)=>{
-    res.render("index.ejs");
-}); 
+let isAuthenticated = false;
+
+// Your login route
+app.post('/', (req, res) => {
+    
+    const username = req.body.username; 
+    const password = req.body.password;
+    console.log(username);
+    console.log(password);
+
+    if(username === "farmer01@gmail.com" && password === "farmer01"){
+      isAuthenticated=true;
+      res.redirect("/");
+    }   
+    else{
+      res.render("login.ejs");
+    }
+});
+
+// Route to render the index page
+app.get('/', (req, res) => {
+    // Check if the user is authenticated
+    if (isAuthenticated) {
+        res.render('index.ejs');
+    } else {
+        // Redirect to the login page if not authenticated
+        isAuthenticated = true;
+        res.render('login.ejs'); // Assuming you have a login route
+    }
+});
+app.get('/community', (req, res) => {
+      res.render('community.ejs'); 
+});
 var response =[];
 var type;
 app.get("/:id", async (req, res) => {
