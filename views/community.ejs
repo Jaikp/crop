@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function loadDiscussions() {
-    fetch('https://community-oo1e.onrender.com/discussions')
+    fetch('https://community-api-1.onrender.com/discussions')
         .then(response => response.json())
         .then(data => displayDiscussions(data))
         .catch(error => console.error('Error fetching discussions:', error));
