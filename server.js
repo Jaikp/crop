@@ -1,7 +1,7 @@
 import express from "express"
 import bodyParser from "body-parser"
 import axios from "axios"
-const API_URL = "https://crop-api-5ilz.onrender.com";
+const API_URL = "https://crop-api-3.onrender.com";
 //https://crop-api-5ilz.onrender.com
 
 
