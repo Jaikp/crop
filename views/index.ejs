@@ -1,71 +1,44 @@
-<%- include('partials/header.ejs') %>
-<video id="back-video" src="/images/video3.mp4" autoplay muted loop></video>
 <div class="top-content">
-    <h1 class="top-h1">Crop Doctor</h1>
-    <div class="top-div">
-      <p class="top-p ">We Care for Your Crops. Helping Indian Farms Thrive. Sustainable Solutions, Better Harvests, Brighter Futures. Let's Grow India Together, One Crop at a Time."</p>
+    <div class="navbar">
+        <%- include('partials/header.ejs') %>
     </div>
-  </div>
-</div>
-<div class="two" id="Features">
+
+    <div class="heading">
+        <h1 class="top-h1">Crop Doctor</h1>
+    </div>
+
+    <div class="top-div">
+        <p class="top-p ">We Care for Your Crops. Helping Indian Farms Thrive. Sustainable Solutions, Better Harvests, Brighter Futures. Let's Grow India Together, One Crop at a Time.</p>
+    </div>
+
+    <div class="top-button">
+        <button id="moreinfo">More Info</button>
+    </div>
+
     <div class="two-head">
          <h1>Select the Type</h1>
     </div>
-    <div class="two-card">
-        <div class="card1 divclick">
-            <img src="/images/field-crop.jpeg" alt="field-crop">
-            <a class=" " href="/field-crop" role="button" name="field-crop">Field Crop</a>
-        </div>
-        <div class="card1 divclick">
-            <img src="/images/fruit-tree.jpeg" alt="field-crop">
-            <a class=" " href="/fruit-tree" role="button" name="fruit-tree">Fruit Tree</a>
-        </div>
-        <div class="card1 divclick">
-            <img src="/images/vegetable-crop.jpeg" alt="field-crop">
-            <a class=" " href="/vegetable-crop" role="button" name="vegetable-crop">vegetable-crop</a>
-        </div>
+    
+</div>
+
+<div class="features">
+    <div class="feature-item">
+        <a class="link" href="/field%20crop" role="button" name="field-crop">
+            <img src="/images/Icons/wheat-grain.png" alt="Icons">
+            Field Crop</a>
+    </div>
+    <div class="feature-item">
+        
+        <a class="link" href="/fruit%20tree" role="button" name="fruit-tree">
+            <img src="/images/Icons/apple.png" alt="Icons">
+            Fruit Tree</a>
+    </div>
+    <div class="feature-item">
+        <a class="link" href="/vegetable%20crop" role="button" name="vegetable-crop">
+            <img src="/images/Icons/carrot.png" alt="Icons">
+            Vegetables</a>
     </div>
     
 </div>
-<div class="three" id="Features">
-    <iframe src="https://weather-pekkiriscim.vercel.app/" width="100%" height="100%"  title="W3Schools Free Online Web Tutorials">
-    </iframe>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 <%- include('partials/footer.ejs') %>
